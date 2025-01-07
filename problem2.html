@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function oddOrEven(num1,num2){
+            var odd = 0;
+            var even = 0;
+            for (let i = num1 ; i<num2+1 ; i++){
+                if (i%2==0){
+                    even = even + i;
+                    console.log(i + "  Even");
+                
+                }
+                else{
+                    console.log(i + "  odd");
+                    odd = odd+i;
+                    
+                }
+            }
+            console.log("The Total of Even numbers : " + even);
+            console.log("The Total of Even numbers : " +odd);
+
+
+        }
+        oddOrEven(20,25)
+    </script>
+</body>
+</html>
