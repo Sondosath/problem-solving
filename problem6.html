@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function  simpleCalculator(num1,num2,op){
+            if (op === "+"){
+                return num1+num2;
+            }
+            else  if (op === "-"){
+                return num1-num2;
+            }
+            else  if (op === "*"){
+                return num1*num2;
+            }
+            else  if (op === "/"){
+                if (!num2==0){
+                     return num1/num2;
+                    }
+               else 
+                    return "CANT DIVID BY ZERO"
+            }
+            else 
+                return "undefind opration "
+        }
+        console.log(simpleCalculator(10,5,"/"));
+        
+    </script>
+</body>
+</html>
